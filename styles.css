@@ -1,0 +1,173 @@
+:root {
+    --lighter-green: hsl(148, 38%, 91%);
+    --dark-green: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 54%);
+    --white: hsl(0, 0%, 100%);
+    --medium-green: hsl(186, 15%, 59%);
+    --grey: hsl(187, 24%, 22%);
+}
+
+@font-face {
+    font-family: 'karla';
+    src: url(./assets/fonts/Karla-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--lighter-green);
+    font-family: 'karla';
+    color: var(--grey);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+form {
+    background: var(--white);
+    border-radius: .5rem;
+    padding: 2rem;
+    width: clamp(50rem, 100%, 10rem);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+label {
+    padding-block: .5rem;
+}
+
+input, .radio-group {
+    padding: 1rem;
+    border-radius: .3rem;
+    border: 1px solid var(--grey); 
+}
+
+input:hover, button:hover, textarea:hover, input[type="checkbox"] + label:hover, input[type="radio"] + label:hover {
+    cursor: pointer;
+    border-color: var(--dark-green);
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    margin-block: 1rem;
+}
+
+fieldset .group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-btns {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    
+}
+
+.radio-group {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-basis: 11rem;
+    padding: .5rem 1rem;
+    gap: 1rem;
+}
+
+textarea {
+    height: 10rem;
+}
+
+.consent-group {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+#submit-btn {
+    padding: 1rem;
+    background: var(--dark-green);
+    border: none;
+    border-radius: .5rem;
+    color: var(--white);
+    font-family: karla;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+#submit-btn:hover {
+    background-color: var(--grey);
+}
+
+.error-message {
+    color: var(--red);
+}
+
+.hidden {
+    display: none;
+}
+
+.required-asterisk {
+    color: var(--medium-green);
+    font-weight: 700;;
+}
+
+legend {
+    margin-block: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: 1px solid var(--dark-green);
+    border: none;
+}
+
+input:not([type="checkbox"]).invalid, textarea.invalid {
+    outline: 1px solid var(--red);
+    border: none;    
+}
+
+input[type="radio"]:checked + div {
+    background-color: var(--dark-green); 
+}
+
+input[type="checkbox"], input[type="radio"] {
+    accent-color: var(--dark-green);
+}
+
+dialog {
+    top: 1rem;
+    border: none;
+    background: var(--grey);
+    color: var(--white);
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+}
+
+dialog h2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer {
+    padding: 2rem;
+}
+
+.attribution a {
+    color: var(--dark-green);
+}
