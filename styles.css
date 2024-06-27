@@ -137,7 +137,12 @@ input:focus, textarea:focus {
 }
 
 input:not([type="checkbox"]).invalid, textarea.invalid {
-    outline: 1px solid var(--red);
+    outline: 1px solid var(--red ); 
+    border: none;    
+}
+
+input:not([type="checkbox"]).invalid:focus, textarea.invalid:focus {
+    outline: 1px solid var(--red );
     border: none;    
 }
 

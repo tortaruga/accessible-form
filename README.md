@@ -6,7 +6,6 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -30,14 +29,10 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
-
-![](./screenshot.jpg)
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/accessible-form-tvKsr5mgd-](https://www.frontendmentor.io/solutions/accessible-form-tvKsr5mgd-)
+- Live Site URL: [https://tortaruga.github.io/accessible-form/](https://tortaruga.github.io/accessible-form/)
 
 ### Built with
 
