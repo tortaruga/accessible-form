@@ -124,7 +124,7 @@ textarea {
 
 .required-asterisk {
     color: var(--medium-green);
-    font-weight: 700;;
+    font-weight: 700;
 }
 
 legend {
